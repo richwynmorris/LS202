@@ -16,3 +16,11 @@
 <a>www.google.com</a>
 ```
 
+### What are attributes?
+
+* Attributes are properties used to define additional imformation about an element. These can include `src`, `id` and `href`. 
+Attributes are defined in the opening tag of an element. They include the attribute name an equals sign and a quoted attribute value.  
+
+```html
+<a href="www.google.com">Google Homepage</a>
+```
