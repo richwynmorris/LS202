@@ -40,3 +40,41 @@ Example:
     </head>
   </html>
 ```
+
+### CSS
+
+The cascading style sheet has 3 different key components that make up the styling of a webpage. They are **selectors, properties and values.** 
+
+**Selectors** 
+
+Selectors are they of designating specific styles to particular elements that exists on in a html document. 
+Selectors come in 3 different qualifiers; **type, class and id.**
+
+**type -** this selector targets the type of element and if often used when an element needs to be styled in a specific way throughout a website.
+
+**class** - this selector targets the any element of specific class. classes can cover different elements types across a web page. This selector is defined with a prefixed `.` to the name of the class. 
+
+**id -** id is a very specific selector that you can only use on a singular element in the html file. The id selector is prefixed with a `#`. 
+
+**Properties**
+
+Properties are type of styles that will be applied to the element. They are contained within the brackets that come after the selector. It is terminated with a semi colon. 
+
+```css
+p { color: }
+<!-- `p` is the selector, `color` is the property.
+```
+
+**Values**
+
+Values are the behaviours of specific properties within the selector. They dictate the appearance and style of property. They are terminated with a semi colon `:` Both properties and values are indented within the curly brackets of the selector. 
+
+### Referencing A Style Sheet in a HTML File
+
+A style sheet needs to be included in a `<link>` element within the `<head>` of the html file. Within the self closing `<link>` tag, if should make reference the the relative css file using the syntax `href="file.name` as well as identify the relationship between the html and css file using `rel="stylesheet"` .  The end product should look something like this:
+
+```html
+<head>
+  <link rel="stylesheet" href="file.name"> 
+<head>
+```
